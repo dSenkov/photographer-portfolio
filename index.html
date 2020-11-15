@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div class="logo">
+          <h1>SOME <br />NAME</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#about-me">ABOUT ME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="main-container">
+        <section class="gallery">
+          <img src="https://picsum.photos/334/400?q=1" alt="image 1" />
+          <img src="https://picsum.photos/335/400?q=2" alt="image 2" />
+          <img src="https://picsum.photos/335/400?q=3" alt="image 3" />
+          <img src="https://picsum.photos/334/400?q=4" alt="image 4" />
+          <img src="https://picsum.photos/335/400?q=5" alt="image 5" />
+          <img src="https://picsum.photos/335/400?q=6" alt="image 6" />
+          <img src="https://picsum.photos/334/400?q=7" alt="image 7" />
+          <img src="https://picsum.photos/335/400?q=8" alt="image 8" />
+          <img src="https://picsum.photos/335/400?q=9" alt="image 9" />
+        </section>
+        <section class="carousel">
+          <span><<</span>
+          <span class="active">1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>>></span>
+        </section>
+        <section class="about-me" id="about-me">
+          <div class="about-me-container">
+            <h3 class="about-me">About Me</h3>
+            <p>
+              <img
+                src="https://picsum.photos/504/300?q=10"
+                alt="about-me-image"
+              />
+            </p>
+            <h3>My Name</h3>
+            <p class="about-me-describe">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              vel, consectetur a debitis tenetur, rem pariatur sit amet ipsum
+              maxime voluptatum repudiandae voluptas perspiciatis distinctio
+              corporis ex blanditiis porro numquam? Architecto, animi reiciendis
+              iusto commodi fugit alias ratione incidunt similique quia, sequi
+              accusamus impedit eum aperiam! Beatae, dolorum eveniet adipisci
+              sint veniam sed vitae voluptas et reiciendis eaque cupiditate
+              rerum! Ipsam quod impedit minus ratione porro, aspernatur veniam
+              esse harum dolore quaerat, ut qui totam. Alias, recusandae tempora
+              laborum soluta consequatur rerum consequuntur eligendi corporis
+              architecto, excepturi voluptatem quaerat reprehenderit!
+            </p>
+            <p>mail: example@emample.com</p>
+            <p>tel: 5353 35531</p>
+            <div class="horizontal-line"></div>
+            <h3>Technical Skills</h3>
+            <h4 class="skill-name">Photography</h4>
+            <progress value="95" max="100" data-label="95%"></progress>
+            <h4 class="skill-name">Web Design</h4>
+            <progress value="85" max="100" data-label="85%"></progress>
+            <h4 class="skill-name">Photoshop</h4>
+            <progress value="80" max="100" data-label="80%"></progress>
+            <button type="button" class="resume">Download Resume</button>
+            <div class="horizontal-line"></div>
+            <h3>How much I charge</h3>
+            <div class="prices-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th><h3>Basic</h3></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Web Design</td>
+                  </tr>
+                  <tr>
+                    <td>Photography</td>
+                  </tr>
+                  <tr>
+                    <td>5GB Storage</td>
+                  </tr>
+                  <tr>
+                    <td>Mail Support</td>
+                  </tr>
+                  <tr>
+                    <td class="price">
+                      <h1>$ 10</h1>
+                      <span>per month</span>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>
+                      <button class="sign-up">Sign Up</button>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+              <table>
+                <thead>
+                  <tr>
+                    <th><h3>Pro</h3></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Web Design</td>
+                  </tr>
+                  <tr>
+                    <td>Photography</td>
+                  </tr>
+                  <tr>
+                    <td>50GB Storage</td>
+                  </tr>
+                  <tr>
+                    <td>Endless Support</td>
+                  </tr>
+                  <tr>
+                    <td class="price">
+                      <h1>$ 25</h1>
+                      <span>per month</span>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>
+                      <button class="sign-up">Sign Up</button>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </section>
+        <address id="contact">
+          <div class="contact-me-container">
+            <h2>Contact Me</h2>
+            <form>
+              <p>
+                Do you want me to photograph you? Fill out the form and fill me
+                in with the details :) I love meeting new people!
+              </p>
+              <p>
+                <label for="name">Name</label>
+                <input type="text" name="name" />
+              </p>
+              <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" />
+              </p>
+              <p>
+                <label for="message"> Message </label>
+                <input type="text" name="message" />
+              </p>
+              <p>
+                <button type="submit" class="contact-me">Send Message</button>
+              </p>
+            </form>
+          </div>
+        </address>
+        <footer>
+          <section class="info">
+            <h3>INFO</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae qui
+              placeat repudiandae pariatur veniam voluptatibus iste aspernatur
+              neque harum libero!
+            </p>
+          </section>
+          <section class="blog-posts">
+            <h3>BLOG POSTS</h3>
+            <div class="blog-post-container">
+              <div class="lorem-blog-link">
+                <img
+                  src="https://picsum.photos/50/50?q=11"
+                  alt="lorem blog link"
+                  class="blog-link-img"
+                />
+                <div class="blog-link-text-container">
+                  <span class="link-title">Lorem</span>
+                  <span>Sed mattis nunc</span>
+                </div>
+              </div>
+              <div class="horizontal-line"></div>
+              <div class="ipsum-blog-link">
+                <img
+                  src="https://picsum.photos/50/50?q=12"
+                  alt="ipsum blog link"
+                  class="blog-link-img"
+                />
+                <div class="blog-link-text-container">
+                  <span class="link-title">Ipsum</span>
+                  <span>Praes tinci sed</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="popular-tags">
+            <h3>POPULAR TAGS</h3>
+            <span class="active-tag">Travel</span>
+            <span>New York</span>
+            <span>London</span>
+            <span>IKEA</span>
+            <span>NORWAY</span>
+            <span>DIY</span>
+            <span>Ideas</span>
+            <span>Baby</span>
+            <span>Family</span>
+            <span>News</span>
+            <span>Clothing</span>
+            <span>Shopping</span>
+            <span>Sports</span>
+            <span>Games</span>
+          </section>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
