@@ -1,0 +1,23 @@
+{
+  "name": "task-4-bem-sass",
+  "version": "1.0.0",
+  "description": "task 4 from front-end course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass scss/style.scss dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dSenkov/portfolio-sample.git"
+  },
+  "author": "Diego",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dSenkov/portfolio-sample/issues"
+  },
+  "homepage": "https://github.com/dSenkov/portfolio-sample#readme",
+  "dependencies": {
+    "sass": "^1.29.0"
+  }
+}
