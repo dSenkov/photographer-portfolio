@@ -14,7 +14,10 @@
     <main>
       <aside>
         <div class="logo">
-          <h1>SOME <br />NAME</h1>
+          <h1>
+            SOME <br />
+            NAME
+          </h1>
         </div>
         <nav>
           <ul>
@@ -37,16 +40,17 @@
           <img src="https://picsum.photos/335/400?q=9" alt="image 9" />
         </section>
         <section class="carousel">
-          <span><<</span>
-          <span class="active">1</span>
-          <span>2</span>
-          <span>3</span>
-          <span>4</span>
-          <span>>></span>
+          <span class="carousel__span"><<</span>
+          <span class="carousel__span carousel__span_active">1</span>
+          <span class="carousel__span">2</span>
+          <span class="carousel__span">3</span>
+          <span class="carousel__span">4</span>
+          <span class="carousel__span">>></span>
         </section>
+
         <section class="about-me" id="about-me">
           <div class="about-me-container">
-            <h3 class="about-me">About Me</h3>
+            <h3 class="about-me-container__title">About Me</h3>
             <p>
               <img
                 src="https://picsum.photos/504/300?q=10"
@@ -54,7 +58,7 @@
               />
             </p>
             <h3>My Name</h3>
-            <p class="about-me-describe">
+            <p class="about-me-container__describe">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
               vel, consectetur a debitis tenetur, rem pariatur sit amet ipsum
               maxime voluptatum repudiandae voluptas perspiciatis distinctio
@@ -67,41 +71,41 @@
               laborum soluta consequatur rerum consequuntur eligendi corporis
               architecto, excepturi voluptatem quaerat reprehenderit!
             </p>
-            <p>mail: example@emample.com</p>
+            <p>mail: example@example.com</p>
             <p>tel: 5353 35531</p>
             <div class="horizontal-line"></div>
             <h3>Technical Skills</h3>
-            <h4 class="skill-name">Photography</h4>
+            <h4 class="about-me-container__skill-name">Photography</h4>
             <progress value="95" max="100" data-label="95%"></progress>
-            <h4 class="skill-name">Web Design</h4>
+            <h4 class="about-me-container__skill-name">Web Design</h4>
             <progress value="85" max="100" data-label="85%"></progress>
-            <h4 class="skill-name">Photoshop</h4>
+            <h4 class="about-me-container__skill-name">Photoshop</h4>
             <progress value="80" max="100" data-label="80%"></progress>
-            <button type="button" class="resume">Download Resume</button>
+            <button type="button" class="about-me-container__resume-button">Download Resume</button>
             <div class="horizontal-line"></div>
             <h3>How much I charge</h3>
             <div class="prices-container">
-              <table>
+              <table class="table">
                 <thead>
                   <tr>
-                    <th><h3>Basic</h3></th>
+                    <th class="table__head"><h3>Basic</h3></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Web Design</td>
+                    <td class="table__cell">Web Design</td>
                   </tr>
                   <tr>
-                    <td>Photography</td>
+                    <td class="table__cell">Photography</td>
                   </tr>
                   <tr>
-                    <td>5GB Storage</td>
+                    <td class="table__cell">5GB Storage</td>
                   </tr>
                   <tr>
-                    <td>Mail Support</td>
+                    <td class="table__cell">Mail Support</td>
                   </tr>
                   <tr>
-                    <td class="price">
+                    <td class="table__cell table__cell_price">
                       <h1>$ 10</h1>
                       <span>per month</span>
                     </td>
@@ -109,33 +113,33 @@
                 </tbody>
                 <tfoot>
                   <tr>
-                    <td>
+                    <td class="table__cell table__cell_sign-up">
                       <button class="sign-up">Sign Up</button>
                     </td>
                   </tr>
                 </tfoot>
               </table>
-              <table>
+              <table class="table">
                 <thead>
                   <tr>
-                    <th><h3>Pro</h3></th>
+                    <th class="table__head"><h3>Pro</h3></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Web Design</td>
+                    <td class="table__cell">Web Design</td>
                   </tr>
                   <tr>
-                    <td>Photography</td>
+                    <td class="table__cell">Photography</td>
                   </tr>
                   <tr>
-                    <td>50GB Storage</td>
+                    <td class="table__cell">50GB Storage</td>
                   </tr>
                   <tr>
-                    <td>Endless Support</td>
+                    <td class="table__cell">Endless Support</td>
                   </tr>
                   <tr>
-                    <td class="price">
+                    <td class="table__cell table__cell_price">
                       <h1>$ 25</h1>
                       <span>per month</span>
                     </td>
@@ -143,15 +147,15 @@
                 </tbody>
                 <tfoot>
                   <tr>
-                    <td>
+                    <td class="table__cell table__cell_sign-up">
                       <button class="sign-up">Sign Up</button>
                     </td>
                   </tr>
                 </tfoot>
               </table>
-            </div>
           </div>
         </section>
+
         <address id="contact">
           <div class="contact-me-container">
             <h2>Contact Me</h2>
@@ -161,19 +165,42 @@
                 in with the details :) I love meeting new people!
               </p>
               <p>
-                <label for="name">Name</label>
-                <input type="text" name="name" />
+                <label for="name" class="contact-me-container__element"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  class="contact-me-container__element contact-me-container__input"
+                />
               </p>
               <p>
-                <label for="email">Email</label>
-                <input type="email" name="email" />
+                <label for="email" class="contact-me-container__element"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="contact-me-container__element contact-me-container__input"
+                />
               </p>
               <p>
-                <label for="message"> Message </label>
-                <input type="text" name="message" />
+                <label for="message" class="contact-me-container__element">
+                  Message
+                </label>
+                <input
+                  type="text"
+                  name="message"
+                  class="contact-me-container__element contact-me-container__input"
+                />
               </p>
               <p>
-                <button type="submit" class="contact-me">Send Message</button>
+                <button
+                  type="submit"
+                  class="contact-me-container__element contact-me-container__button"
+                >
+                  Send Message
+                </button>
               </p>
             </form>
           </div>
@@ -190,47 +217,59 @@
           <section class="blog-posts">
             <h3>BLOG POSTS</h3>
             <div class="blog-post-container">
-              <div class="lorem-blog-link">
+              <div class="blog-link">
                 <img
                   src="https://picsum.photos/50/50?q=11"
                   alt="lorem blog link"
-                  class="blog-link-img"
+                  class="blog-link__img"
                 />
                 <div class="blog-link-text-container">
-                  <span class="link-title">Lorem</span>
-                  <span>Sed mattis nunc</span>
+                  <span
+                    class="blog-link-text-container__span blog-link-text-container__span_link-title"
+                    >Lorem</span
+                  >
+                  <span class="blog-link-text-container__span"
+                    >Sed mattis nunc</span
+                  >
                 </div>
               </div>
               <div class="horizontal-line"></div>
-              <div class="ipsum-blog-link">
+              <div class="blog-link">
                 <img
                   src="https://picsum.photos/50/50?q=12"
                   alt="ipsum blog link"
-                  class="blog-link-img"
+                  class="blog-link__img"
                 />
                 <div class="blog-link-text-container">
-                  <span class="link-title">Ipsum</span>
-                  <span>Praes tinci sed</span>
+                  <span
+                    class="blog-link-text-container__span blog-link-text-container__span_link-title"
+                    >Ipsum</span
+                  >
+                  <span class="blog-link-text-container__span"
+                    >Praes tinci sed</span
+                  >
                 </div>
               </div>
             </div>
           </section>
           <section class="popular-tags">
             <h3>POPULAR TAGS</h3>
-            <span class="active-tag">Travel</span>
-            <span>New York</span>
-            <span>London</span>
-            <span>IKEA</span>
-            <span>NORWAY</span>
-            <span>DIY</span>
-            <span>Ideas</span>
-            <span>Baby</span>
-            <span>Family</span>
-            <span>News</span>
-            <span>Clothing</span>
-            <span>Shopping</span>
-            <span>Sports</span>
-            <span>Games</span>
+            <span class="popular-tags__span popular-tags__span_active"
+              >Travel</span
+            >
+            <span class="popular-tags__span">New York</span>
+            <span class="popular-tags__span">London</span>
+            <span class="popular-tags__span">IKEA</span>
+            <span class="popular-tags__span">NORWAY</span>
+            <span class="popular-tags__span">DIY</span>
+            <span class="popular-tags__span">Ideas</span>
+            <span class="popular-tags__span">Baby</span>
+            <span class="popular-tags__span">Family</span>
+            <span class="popular-tags__span">News</span>
+            <span class="popular-tags__span">Clothing</span>
+            <span class="popular-tags__span">Shopping</span>
+            <span class="popular-tags__span">Sports</span>
+            <span class="popular-tags__span">Games</span>
           </section>
         </footer>
       </div>
