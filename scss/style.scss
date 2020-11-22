@@ -17,6 +17,10 @@ body {
   font-family: $font-family;
 }
 
+h1 {
+  width: 33%;
+}
+
 h2 {
   font-size: larger;
 }
@@ -34,6 +38,8 @@ aside {
   color: #bebebe;
 
   .logo {
+    display: flex;
+    justify-content: center;
     margin-top: 80px;
     font-size: smaller;
   }
