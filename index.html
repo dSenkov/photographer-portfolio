@@ -64,16 +64,29 @@
               laborum soluta consequatur rerum consequuntur eligendi corporis
               architecto, excepturi voluptatem quaerat reprehenderit!
             </p>
-            <p><a href="mailto:example@example.com" class="about-me-container__mail">mail: example@example.com</a></p>
-            <p><a href="tel:5353 35531" class="about-me-container__tel">tel: 5353 35531</a></p>
+            <p>
+              <a href="mailto:example@example.com" class="about-me-container__mail">mail: example@example.com</a>
+            </p>
+            <p>
+              <a href="tel:5353 35531" class="about-me-container__tel">tel: 5353 35531</a>
+            </p>
             <div class="horizontal-line"></div>
             <h3>Technical Skills</h3>
             <h4 class="about-me-container__skill-name">Photography</h4>
-            <progress value="95" max="100" data-label="95%"></progress>
+            <div class="about-me-container__progress" style="--done: 95%; --remain: 5%;">
+              <div class="about-me-container__progress_filled" data-label="95%"></div>
+              <div class="about-me-container__progress_remainder"></div>
+            </div>
             <h4 class="about-me-container__skill-name">Web Design</h4>
-            <progress value="85" max="100" data-label="85%"></progress>
+            <div class="about-me-container__progress" style="--done: 85%; --remain: 15%;">
+              <div class="about-me-container__progress_filled" data-label="85%"></div>
+              <div class="about-me-container__progress_remainder"></div>
+            </div>
             <h4 class="about-me-container__skill-name">Photoshop</h4>
-            <progress value="80" max="100" data-label="80%"></progress>
+            <div class="about-me-container__progress" style="--done: 80%; --remain: 20%;">
+              <div class="about-me-container__progress_filled" data-label="80%"></div>
+              <div class="about-me-container__progress_remainder"></div>
+            </div>
             <button type="button" class="about-me-container__resume-button">Download Resume</button>
             <div class="horizontal-line"></div>
             <h3>How much I charge</h3>
