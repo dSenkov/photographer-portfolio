@@ -99,6 +99,11 @@ section.about-me {
     text-align: justify;
   }
 
+  &__mail, &__tel {
+    text-decoration: none;
+    color: inherit;
+  }
+
   &__skill-name {
     width: 25%;
     letter-spacing: 3px;
