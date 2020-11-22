@@ -17,6 +17,10 @@ body {
   font-family: $font-family;
 }
 
+h2 {
+  font-size: larger;
+}
+
 main {
   width: 85vw;
   margin: 0 auto;
@@ -26,7 +30,7 @@ main {
 aside {
   width: 15vw;
   text-align: center;
-  background: white;
+  background-color: #ffffff;
   color: #bebebe;
 
   .logo {
@@ -71,7 +75,7 @@ aside {
     margin: 0 15px;
 
     &_active {
-      background: black;
+      background-color: #000;
       color: $body-main-color;
       padding: 8px 15px;
       margin: 0 0;
@@ -81,7 +85,7 @@ aside {
 
 section.about-me {
   @include flex(row, flex-start);
-  background: #686868;
+  background-color: #686868;
   color: #d3d3d3;
 }
 
@@ -146,36 +150,6 @@ section.about-me {
   }
 }
 
-progress {
-  width: 100%;
-  height: 30px;
-  -webkit-appearance: none;
-  position: relative;
-
-  &::-webkit-progress-bar {
-    background-color: white;
-    border-radius: 0px;
-  }
-
-  &::-moz-progress-bar {
-    background-color: #d3d3d3;
-  }
-
-  &::-webkit-progress-value {
-    background-color: #d3d3d3;
-  }
-
-  &::before {
-    content: attr(data-label);
-    font-size: medium;
-    color: black;
-
-    position: absolute;
-    top: 5px;
-    left: 40%;
-  }
-}
-
 .horizontal-line {
   height: 0px;
   border-top: 1px solid #d3d3d3;
@@ -193,7 +167,7 @@ progress {
   &__head {
     width: 60px;
     height: 80px;
-    background-color: black;
+    background-color: #000;
     color: #686868;
   }
 
@@ -206,6 +180,13 @@ progress {
     &_price {
       height: 120px;
       @include flex();
+    }
+
+    &_price-amount {
+      font: {
+        size: x-large;
+        weight: 900;
+      }
     }
 
     &_sign-up {
@@ -245,7 +226,7 @@ address {
   }
 
   &__button {
-    background-color: black;
+    background-color: #000;
     color: $body-main-color;
     height: 35px;
     font-size: medium;
@@ -255,7 +236,7 @@ address {
 
 footer {
   @include flex(row, space-between);
-  background: #a9a9a9;
+  background-color: #a9a9a9;
   padding: 30px 10px;
 
   section {
@@ -294,7 +275,7 @@ footer {
     padding: 0px 4px;
 
     &_active {
-      background-color: black;
+      background-color: #000;
       font-size: small;
       color: $body-main-color;
       padding: 2px 6px;
