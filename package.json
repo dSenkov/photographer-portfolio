@@ -4,7 +4,6 @@
   "description": "task 4 from front-end course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "sass scss/style.scss dist/style.css"
   },
   "repository": {
